@@ -19,10 +19,9 @@ This is a simulation of traffic light system using real time traffic density dat
 
 ## Features
 
-🚀 Demo Mode without authentication <br/>
-🚀 Authentication using Next Auth (Google) <br/>
-🚀 Search Movies/TV Shows <br/>
-🚀 Watch Movies/TV Shows <br/>
+🚀 Green light time based on Traffic Density <br/>
+🚀 Vehicle Counting using OpenCV <br/>
+🚀 Controll Arduino Uno using python script
 
 ## Build Process
 
