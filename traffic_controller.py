@@ -64,4 +64,3 @@ def activateLane(laneIndex, gst, starvation):
 
 
 ledCheck()
-# lcd("Hi There how are you")
