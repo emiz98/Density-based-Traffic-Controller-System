@@ -1,7 +1,7 @@
 import time
 from pyfirmata import Arduino, util, STRING_DATA
 
-PORT = 'COM4'
+PORT = 'COM5'
 board = Arduino(PORT)
 
 
@@ -48,12 +48,12 @@ def activateLane(laneIndex, gst, starvation):
     lcd(str(starvation[0])+" "+str(starvation[1]
                                    )+" "+str(starvation[2])+" "+str(starvation[3]))
     for i in range(0, 4):
-        if(i != laneIndex):
+        if (i != laneIndex):
             board.digital[TL[i].yellow].write(0)
             board.digital[TL[i].green].write(0)
             board.digital[TL[i].red].write(1)
         else:
-            if(gst < 4):
+            if (gst < 4):
                 board.digital[TL[i].red].write(0)
                 board.digital[TL[i].green].write(0)
                 board.digital[TL[i].yellow].write(1)
@@ -64,3 +64,4 @@ def activateLane(laneIndex, gst, starvation):
 
 
 ledCheck()
+# lcd("Hi There how are you")
